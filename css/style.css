@@ -11,13 +11,13 @@
     font-size: 30px;
 } */
 
-*,
+/* *,
 ::after,
 ::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 html {
     font-size: 100%;
@@ -79,56 +79,71 @@ h2 {
 .haikei {
     background-color: #d5eff9;
     background-image: url(../img/bg-haikei.png);
-  background-position: center top;
-  background-repeat: repeat-y;
+    background-position: center top;
+    background-repeat: repeat-y;
 }
 
 /*==================================================
 スライダーのためのcss
 ===================================*/
-.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
-    width:94%;
-    margin:0 auto;
+.slider {
+    /*横幅94%で左右に余白を持たせて中央寄せ*/
+    width: 94%;
+    /* max-width: 1920px; */
+    margin: 0 auto;
 }
 
 .slider img {
-    width:60vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
-    height:auto;
+    width: 60vw;
+    /*スライダー内の画像を60vwにしてレスポンシブ化*/
+    height: auto;
 }
 
 .slider .slick-slide {
-	transform: scale(0.9);/*左右の画像のサイズを80%に*/
-	transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
-	opacity: 0.5;/*透過50%*/
+    transform: scale(0.9);
+    /*左右の画像のサイズを80%に*/
+    transition: all .5s;
+    /*拡大や透過のアニメーションを0.5秒で行う*/
+    opacity: 0.5;
+    /*透過50%*/
 }
 
-.slider .slick-slide.slick-center{
-	transform: scale(1);/*中央の画像のサイズだけ等倍に*/
-	opacity: 1;/*透過なし*/
+.slider .slick-slide.slick-center {
+    transform: scale(1);
+    /*中央の画像のサイズだけ等倍に*/
+    opacity: 1;
+    /*透過なし*/
 }
 
 
 /*矢印の設定*/
 
 /*戻る、次へ矢印の位置*/
-.slick-prev, 
+.slick-prev,
 .slick-next {
-    position: absolute;/*絶対配置にする*/
+    position: absolute;
+    /*絶対配置にする*/
     top: 42%;
-    cursor: pointer;/*マウスカーソルを指マークに*/
-    outline: none;/*クリックをしたら出てくる枠線を消す*/
-    border-top: 2px solid #666;/*矢印の色*/
-    border-right: 2px solid #666;/*矢印の色*/
+    cursor: pointer;
+    /*マウスカーソルを指マークに*/
+    outline: none;
+    /*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;
+    /*矢印の色*/
+    border-right: 2px solid #666;
+    /*矢印の色*/
     height: 15px;
     width: 15px;
 }
 
-.slick-prev {/*戻る矢印の位置と形状*/
+.slick-prev {
+    /*戻る矢印の位置と形状*/
     left: -1.5%;
     transform: rotate(-135deg);
 }
 
-.slick-next {/*次へ矢印の位置と形状*/
+.slick-next {
+    /*次へ矢印の位置と形状*/
     right: -1.5%;
     transform: rotate(45deg);
 }
@@ -136,27 +151,31 @@ h2 {
 /*ドットナビゲーションの設定*/
 
 .slick-dots {
-    text-align:center;
-	margin:20px 0 0 0;
+    text-align: center;
+    margin: 20px 0 0 0;
 }
 
 .slick-dots li {
-    display:inline-block;
-	margin:0 5px;
+    display: inline-block;
+    margin: 0 5px;
 }
 
 .slick-dots button {
     color: transparent;
     outline: none;
-    width:8px;/*ドットボタンのサイズ*/
-    height:8px;/*ドットボタンのサイズ*/
-    display:block;
-    border-radius:50%;
-    background:#ccc;/*ドットボタンの色*/
+    width: 8px;
+    /*ドットボタンのサイズ*/
+    height: 8px;
+    /*ドットボタンのサイズ*/
+    display: block;
+    border-radius: 50%;
+    background: #ccc;
+    /*ドットボタンの色*/
 }
 
-.slick-dots .slick-active button{
-    background:#333;/*ドットボタンの現在地表示の色*/
+.slick-dots .slick-active button {
+    background: #333;
+    /*ドットボタンの現在地表示の色*/
 }
 
 
@@ -165,7 +184,7 @@ h2 {
 
 
 .slider img {
-    border-radius: 68% 32% 77% 23% / 38% 70% 30% 62% ;
+    border-radius: 68% 32% 77% 23% / 38% 70% 30% 62%;
 }
 
 /* .slider {
@@ -191,15 +210,15 @@ h2 {
 
 .top p {
     background-color: #ffad2d;
-    border-radius:20px;
+    border-radius: 20px;
     padding: 10px 30px;
 }
 
 
 header {
     /* background-color: #0068b7; */
-padding-top: 20px;
-padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     background-image: url(../img/bg-1.png), url(../img/bg-top.png);
     background-repeat: repeat-x, no-repeat;
@@ -232,8 +251,8 @@ header img {
 }
 
 .gnavi a:hover {
-background-color: #ffad2d;
-border-radius: 20px;
+    background-color: #ffad2d;
+    border-radius: 20px;
 }
 
 .gnavi-list {
@@ -290,8 +309,8 @@ li {
 .grid {
     display: grid;
     place-items: center;
-gap: 10px;
-grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 
@@ -332,7 +351,7 @@ th {
     background-color: #0079c3;
     color: #fff;
     border: 1px solid #0079c3;
-    
+
 }
 
 table {
@@ -340,9 +359,9 @@ table {
     width: 100%;
     min-width: 300px;
     font-size: 14px;
-    
-    
-    
+
+
+
 
     /* border: 1px solid; */
     /* width: 340px; */
@@ -354,7 +373,6 @@ td {
     padding-right: 0.5rem;
     background-color: #fff;
     border: 1px solid #0079c3
-    
 }
 
 .size {
@@ -473,14 +491,14 @@ footer {
     background-image: url(../img/bg-2.png);
     background-repeat: repeat-x;
     background-color: #0068b7;
-margin-top: 100px;
-color: #fff;
-text-align: center;
+    margin-top: 100px;
+    color: #fff;
+    text-align: center;
 }
 
 .foot {
-  padding-top: 60px;
-  padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 40px;
     /* : 100px; */
     /* padding-bottom: 25px;
     text-align: center; */
@@ -544,7 +562,7 @@ text-align: center;
     }
 
     .contents {
-flex-direction: column;
+        flex-direction: column;
     }
 
     aside {
@@ -560,6 +578,8 @@ flex-direction: column;
     }
 
     .grid {
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-}/* 消さない */
+}
+
+/* 消さない */
