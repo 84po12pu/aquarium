@@ -89,14 +89,17 @@ h2 {
 .slider {
     /*横幅94%で左右に余白を持たせて中央寄せ*/
     width: 94%;
-    /* max-width: 1920px; */
     margin: 0 auto;
+    max-width: 1920px;
+    /* 大きいサイズ用の設定 */
 }
 
 .slider img {
-    width: 60vw;
+    width: 54vw;
     /*スライダー内の画像を60vwにしてレスポンシブ化*/
     height: auto;
+    max-width: 1152px;
+    /* 大きいサイズ用の設定 */
 }
 
 .slider .slick-slide {
@@ -574,12 +577,15 @@ footer {
     }
 
     section {
-        padding: 15px;
+        padding: 20px;
+        padding-bottom: 30px;
     }
 
     .grid {
         grid-template-columns: 1fr 1fr;
     }
-}
 
-/* 消さない */
+    .a-right {
+        padding: 30px;
+    }
+}/* 消さない */
