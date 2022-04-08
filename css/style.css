@@ -3,32 +3,13 @@
 /* 共通
 -----------------------------------------------------*/
 
-/* h1 {
-    color: #0079c3;
-    text-align: left;
-    margin: 0 auto;
-    width: fit-content;
-    font-size: 30px;
-} */
-
-/* *,
-::after,
-::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
 html {
     font-size: 100%;
 }
 
 body {
     font-family: sans-serif;
-    /* background-color: #d5eff9; */
-    /* background-color: #97cdf3; */
     color: #515151;
-    /* #f8fcfb */
 }
 
 a {
@@ -83,6 +64,8 @@ h2 {
     background-position: center top;
     background-repeat: repeat-y;
 }
+
+
 
 /*==================================================
 スライダーのためのcss
@@ -152,6 +135,7 @@ h2 {
     transform: rotate(45deg);
 }
 
+
 /*ドットナビゲーションの設定-------------------*/
 
 .slick-dots {
@@ -190,7 +174,6 @@ h2 {
 
 
 
-
 /* header
 -----------------------------------------------------*/
 .wave {
@@ -214,9 +197,7 @@ h2 {
     padding: 10px 30px;
 }
 
-
 header {
-    /* background-color: #0068b7; */
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
@@ -234,16 +215,8 @@ header img {
     margin-top: 10px;
 }
 
-/* header p {
-    color: #fff;
-} */
-
 .gnavi {
     justify-content: center;
-    /* padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 20px; */
-    /* background-color: #fff; */
 }
 
 .gnavi a {
@@ -259,15 +232,6 @@ header img {
     list-style: none;
 }
 
-/* .gnavi-item {
-    color: #fff;
-} */
-
-/* .head {
-    justify-content: space-between;
-    align-items: center;
-} */
-
 li {
     font-size: 16px;
 }
@@ -277,31 +241,15 @@ li {
 }
 
 
-/* h1 img {
-    width: 40px;
-} */
-
-/* .open-time {
-    max-width: 700px;
-    background-color: #ffad2d;;
-    border-radius: 10px;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-    font-size: 18px;
-} */
-
 /* info
 -----------------------------------------------------*/
 .yellow {
     color: #ffad2d;
 }
 
-
 .sentence {
     margin-top: 1rem;
 }
-
 
 
 /* friend
@@ -313,59 +261,23 @@ li {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-
 .friend p {
     margin-bottom: 1rem;
 }
 
-/* .flame {
-    justify-content: space-between;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.flame p {
-    margin-top: 15px;
-}
-
-.img-box1 p,
-.img-box2 p,
-.img-box3 p {
-    font-weight:400;
-    font-size: 20px;
-} */
 
 /* money
 -----------------------------------------------------*/
 th,
 td {
-    /* border: 2px solid #0079c3; */
     width: 33%;
     padding: 10px;
-    /* border: solid 1px #0079c3;
-    padding-top: 15px;
-    padding-bottom: 15px; */
 }
 
 th {
     background-color: #0079c3;
     color: #fff;
     border: 1px solid #0079c3;
-
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-    min-width: 300px;
-    font-size: 14px;
-
-
-
-
-    /* border: 1px solid; */
-    /* width: 340px; */
-
 }
 
 td {
@@ -373,6 +285,13 @@ td {
     padding-right: 0.5rem;
     background-color: #fff;
     border: 1px solid #0079c3
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 300px;
+    font-size: 14px;
 }
 
 .size {
@@ -386,39 +305,7 @@ td {
     border-right: 1px solid #fff;
 }
 
-/* th+th {
-    border-left: 3px solid #fff;
-} */
 
-/* td:first-child {
-    width: 140px;
-    background-color: #0079c3;
-    color: #f8fcfb;
-    text-align: center;
-} */
-
-/* .right {
-    text-align: right;
-}
-
-.font {
-    font-size: 12px;
-}
-
-td:last-child {
-    padding-right: 15px;
-}
-
-.size {
-    font-size: 20px;
-    font-weight:400;
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
-.line {
-    border-top: 2px solid #f8fcfb;
-} */
 
 /* サイドバー
 -----------------------------------------------------*/
@@ -499,21 +386,15 @@ footer {
 .foot {
     padding-top: 60px;
     padding-bottom: 40px;
-    /* : 100px; */
-    /* padding-bottom: 25px;
-    text-align: center; */
 }
+
+
+
+
 
 /* モバイル
 -----------------------------------------------------*/
 @media (max-width: 768px) {
-
-
-    /* .head,
-    .flame {
-        flex-direction: column;
-        align-items: center;
-    } */
 
     .top {
         flex-direction: column;
@@ -527,15 +408,6 @@ footer {
     .gnavi {
         margin-top: 10px;
     }
-
-    /* h1 {
-        width: 100%;
-    } */
-
-    /* .gnavi li {
-        margin-top: 35px;
-        margin-bottom: 35px;
-    } */
 
     .gnavi li {
         font-size: 14px;
@@ -585,6 +457,5 @@ footer {
     .a-right {
         padding: 30px;
     }
-}
-
-/* 消さない */
+    
+}/* 768pxここまで */
